@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции и скидки</title>
+    <link rel="stylesheet" href="/static/css/discounts.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="practice-btn">Practice</button>
+        <div class="right-buttons">
+            <button class="icon-btn">%</button>
+            <button class="icon-btn" disabled>👤</button>
+        </div>
+    </div>
+
+    <div class="tiles-container">
+        {% for discount in discounts %}
+        <div class="tile">
+            <div class="partner-image" style="background-image: url('{{ discount.img }}')"></div>
+            <h3>{{ discount.name }}</h3>
+            <p>{{ discount.descr }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
