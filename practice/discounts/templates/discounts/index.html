@@ -1,25 +1,14 @@
+{% extends "discounts/base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title_css %}
     <title>Practice</title>
     <link rel="stylesheet" href="{% static "css/index.css" %}">
-</head>
-<body>
-    <div class="top-bar">
-        <button class="practice-btn">Practice</button>
-        <div class="right-buttons">
-            <button class="icon-btn">%</button>
-            <button class="icon-btn" disabled>👤</button>
-        </div>
-    </div>
+{% endblock title_css %}
 
+{% block main_content %}
     <div class="main-content">
         <h1 class="title">Practice</h1>
-        <button class="discount-btn">Скидки</button>
+        <a class="discount-btn" href={% url "discounts" %}>Скидки</a>
     </div>
-</body>
-</html>
+{% endblock main_content %}
