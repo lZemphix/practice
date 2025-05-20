@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title_css %}{% endblock title_css %}
+</head>
+
+<body>
+    <div class="top-bar">
+        <a class="practice-btn" href={% url "index" %}>Practice</a>
+        <div class="right-buttons">
+            <a class="icon-btn" href={% url "discounts" %}>%</a>
+            <button class="icon-btn">👤</button>
+        </div>
+    </div>
+    {% block main_content %} {% endblock main_content %}
+</body>
+</html>

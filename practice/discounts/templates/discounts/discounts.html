@@ -10,9 +10,9 @@
     <div class="tiles-container">
         {% for discount in discounts %}
         <div class="tile">
-            <div class="partner-image" style="background-image: url('{{ discount.image }}')"></div>
+            <div class="partner-image" style="background-image: url('{{ discount.image.url }}')"></div>
             <h3>{{ discount.name }}</h3>
-            <p>{{ discount.how_get }}</p>
+            <p>{{ discount.description }}</p>
         </div>
         {% endfor %}
     </div>
