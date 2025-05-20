@@ -1,0 +1,7 @@
+practice/*.sqlite3
+.venv
+**/__pycache__
+__pycache__
+practice/discounts/migrations/*.py
+!practice/discounts/migrations/__init__.py
+practice/discounts/fixtures/
