@@ -2,3 +2,4 @@
 practice/*.sqlite3
 **/__pycache__
 __pycache__
+practice/discounts/fixtures/
